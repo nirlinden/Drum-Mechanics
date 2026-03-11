@@ -4,9 +4,6 @@
 
     <div class="container text-center pt-5">
         <h1 class="metal-title" style="font-size: 3.5rem;">LOGIN</h1>
-        <div class="mb-4">
-            <span class="metal-subtitle">Authentication Required</span>
-        </div>
 
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4">

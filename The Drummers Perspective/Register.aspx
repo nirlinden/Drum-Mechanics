@@ -4,14 +4,9 @@
 
     <div class="container text-center pt-5">
         <h1 class="metal-title" style="font-size: 3.5rem;">REGISTER</h1>
-        <div class="mb-4">
-            <span class="metal-subtitle">Registration Protocol</span>
-        </div>
-
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-5">
                 <div class="card auth-card p-4 text-white text-start">
-                    
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="form-label text-uppercase small text-danger fw-bold">First Name</label>

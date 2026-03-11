@@ -3,17 +3,11 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
     <div class="container text-center pt-5 pb-5">
-        <h1 class="metal-title">PROJECT<br>OVERVIEW</h1>
+        <h1 class="metal-title">ABOUT</h1>
         
         <div class="mb-5">
-            <span class="metal-subtitle">The Objective</span>
+            <span class="metal-subtitle">We break down the drum tracks to analyze <br /> exactly what makes heavy metal so complex</span>
         </div>
-        
-        <p class="lead text-light mb-4" style="max-width: 700px; margin: 0 auto; text-shadow: 1px 1px 2px #000;">
-            Most listeners hear a song. We hear mathematics.
-            <br />
-            We break down the drum tracks to analyze exactly what makes heavy metal so complex.
-        </p>
     </div>
 
     <div class="container" style="max-width: 1000px;">
