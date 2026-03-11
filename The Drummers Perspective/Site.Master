@@ -29,6 +29,7 @@
                     <div class="navbar-nav">
                         <a class="nav-link" href="Default.aspx">Home</a>
                         <a class="nav-link" href="About.aspx">About</a>
+                        <a class="nav-link" href="Gallery.aspx">Gallery</a>
                         <a class="nav-link" href="Login.aspx">Login</a>
                         <a class="nav-link" href="Register.aspx">Register</a>
                     </div>

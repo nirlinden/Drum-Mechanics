@@ -25,7 +25,7 @@
                     <div class="face-card-content text-start">
                         <h3 class="text-white mb-1">PRECISION</h3>  
                         <p class="small text-white opacity-75">
-                            Learn how mathematical composition creates perfect rhythm.
+                            How mathematical composition creates perfect rhythm.
                         </p>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                     <div class="face-card-content text-start">
                         <h3 class="text-white mb-1">SPEED</h3>
                         <p class="small text-white opacity-75">
-                            Analyze the physical endurance required for thrash metal.
+                            The physical endurance required for thrash metal.
                         </p>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                         <h3 class="text-white mb-1">COMPLEXITY</h3>
 
                         <p class="small text-white opacity-75">
-                            Understand odd-time signatures and progressive flow.
+                            Odd-time signatures and progressive flow.
                         </p>
                     </div>
                 </div>
@@ -56,11 +56,4 @@
 
         </div>
     </div>
-
-    <hr class="border-secondary my-5" />
-
-    <div class="text-center mt-5 mb-5">
-        <a href="About.aspx" class="btn btn-red btn-lg px-5">ABOUT</a>
-    </div>
-
 </asp:Content>

@@ -42,14 +42,6 @@
                     </p>
                 </div>
             </div>
-
         </div>
-
-        <hr class="border-secondary my-5" />
-        
-        <div class="text-center">
-            <a href="Default.aspx" class="btn btn-red px-5 mb-4">RETURN HOME</a>
-        </div>
-    </div>
 
 </asp:Content>

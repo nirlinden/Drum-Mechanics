@@ -11,7 +11,7 @@ namespace The_Drummers_Perspective
 {
 
 
-    public partial class _Default
+    public partial class Gallery
     {
     }
 }
