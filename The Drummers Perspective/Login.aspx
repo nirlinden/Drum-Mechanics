@@ -19,7 +19,9 @@
                         <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control bg-dark text-white border-secondary" TextMode="Password"></asp:TextBox>
                     </div>
 
-                    <asp:Button ID="btnLogin" runat="server" Text="LOGIN" CssClass="btn btn-red w-100 py-2 fw-bold" />
+                    <asp:Label ID="lblServerMessage" runat="server" CssClass="d-block text-center text-danger small fw-bold mb-3"></asp:Label>
+
+                    <asp:Button ID="btnLogin" runat="server" Text="LOGIN" CssClass="btn btn-red w-100 py-2 fw-bold" OnClick="btnLogin_Click" />
                     
                     <div class="text-center mt-3">
                         <a href="Register.aspx" class="text-muted small text-decoration-none">No account? Register here.</a>

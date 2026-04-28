@@ -2,46 +2,43 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
-    <div class="container text-center pt-5 pb-5">
+    <div class="text-center py-5">
         <h1 class="metal-title">ABOUT</h1>
-        
-        <div class="mb-5">
-            <span class="metal-subtitle">We break down the drum tracks to analyze <br /> exactly what makes heavy metal so complex</span>
-        </div>
+        <span class="metal-subtitle">Analyzing the complexity of Progressive Metal</span>
     </div>
 
-    <div class="container" style="max-width: 1000px;">
-        <div class="row g-4 mb-5">
-            
-            <div class="col-md-4">
-                <div class="tech-card h-100 text-center">
-                    <h2 class="h1 text-danger fw-bold">01</h2>
-                    <h4 class="text-white mt-3 text-uppercase">Polyrhythms</h4>
-                    <p class="small mt-2 text-muted">
-                        The art of playing two different time signatures simultaneously (e.g., 7/8 against 4/4).
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="tech-card h-100 text-center">
-                    <h2 class="h1 text-danger fw-bold">02</h2>
-                    <h4 class="text-white mt-3 text-uppercase">Endurance</h4>
-                    <p class="small mt-2 text-muted">
-                        Sustaining 200+ Beats Per Minute (BPM) using double-kick techniques for extended durations.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="tech-card h-100 text-center">
-                    <h2 class="h1 text-danger fw-bold">03</h2>
-                    <h4 class="text-white mt-3 text-uppercase">Precision</h4>
-                    <p class="small mt-2 text-muted">
-                        Micro-timing adjustments that create the "human feel" within a rigid mathematical grid.
-                    </p>
-                </div>
+    <div class="container">
+    <div class="row g-4 text-center">
+        
+        <div class="col-md-4">
+            <div class="tech-card rounded">
+                <h2 class="h1 text-danger fw-bold">01</h2>
+                <h4 class="text-white mt-3">POLYRHYTHMS</h4>
+                <p class="small mt-2 text-white-50">Playing different time signatures at once (e.g., 7/8 against 4/4).</p>
             </div>
         </div>
+
+        <div class="col-md-4">
+            <div class="tech-card rounded">
+                <h2 class="h1 text-danger fw-bold">02</h2>
+                <h4 class="text-white mt-3">ENDURANCE</h4>
+                <p class="small mt-2 text-white-50">Sustaining 200+ BPM with double-kick techniques for long sets.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="tech-card rounded">
+                <h2 class="h1 text-danger fw-bold">03</h2>
+                <h4 class="text-white mt-3">PRECISION</h4>
+                <p class="small mt-2 text-white-50">Creating a human "feel" while staying locked to a rigid grid.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="Default.aspx" class="btn btn-red">RETURN HOME</a>
+    </div>
+</div>
 
 </asp:Content>

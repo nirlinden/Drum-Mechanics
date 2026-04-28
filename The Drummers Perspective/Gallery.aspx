@@ -3,87 +3,87 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="container text-center pt-5 pb-5">
-        <h1 class="metal-title text-uppercase">ICONIC BANDS</h1>
+        <h1 class="metal-title text-uppercase">GALLERY</h1>
         <div class="mt-3 mb-4">
-            <span class="metal-subtitle">Bands that revolutionized drums</span>
+            <span class="metal-subtitle">Icons of Rock & Metal Drumming</span>
         </div>
     </div>
 
-    <div class="container pb-5 text-center cards-container">
+    <div class="container pb-5 text-center">
+        
+        <div class="row mb-4">
+            <div class="col-12">
+                <hr class="border-secondary mb-4" />
+            </div>
+        </div>
+
         <div class="row g-4 justify-content-center">
             
-            <div class="col-md-3">
-                <div class="face-card rounded" style="background-image: url('Images/Bands/LedZepplin.png');">
+            <div class="col-md-4 col-lg-3">
+                <div class="face-card rounded" style="background-image: url('Images/Bands/Metallica.png'); height: 350px;">
                     <div class="face-card-content text-start">
-                        <h3 class="text-white mb-1 text-uppercase">LED ZEPPELIN</h3>  
-                        <p class="small text-white opacity-75">The heavy foundation and swing of John Bonham.</p>
+                        <h3 class="text-white mb-1">METALLICA</h3>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="face-card rounded" style="background-image: url('Images/Bands/Metallica.png');">
+            <div class="col-md-4 col-lg-3">
+                <div class="face-card rounded" style="background-image: url('Images/Bands/Tool.png'); height: 350px;">
                     <div class="face-card-content text-start">
-                        <h3 class="text-white mb-1 text-uppercase">METALLICA</h3>
-                        <p class="small text-white opacity-75">The double-bass era and thrash stamina.</p>
+                        <h3 class="text-white mb-1">TOOL</h3>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="face-card rounded" style="background-image: url('Images/Bands/Tool.png');">
+            <div class="col-md-4 col-lg-3">
+                <div class="face-card rounded" style="background-image: url('Images/Bands/BlackSabbath.png'); height: 350px;">
                     <div class="face-card-content text-start">
-                        <h3 class="text-white mb-1 text-uppercase">TOOL</h3>
-                        <p class="small text-white opacity-75">The sacred geometry of Danny Carey’s polyrhythms.</p>
+                        <h3 class="text-white mb-1">BLACK SABBATH</h3>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="face-card rounded" style="background-image: url('Images/Bands/Rush.png');">
+            <div class="col-md-4 col-lg-3">
+                <div class="face-card rounded" style="background-image: url('Images/Bands/LedZepplin.png'); height: 350px;">
                     <div class="face-card-content text-start">
-                        <h3 class="text-white mb-1 text-uppercase">RUSH</h3>
-                        <p class="small text-white opacity-75">The lyrical precision and architectural kit of Neil Peart.</p>
+                        <h3 class="text-white mb-1">LED ZEPPELIN</h3>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="face-card rounded" style="background-image: url('Images/Bands/Slayer.png');">
+            <div class="col-md-4 col-lg-3">
+                <div class="face-card rounded" style="background-image: url('Images/Bands/Slayer.png'); height: 350px;">
                     <div class="face-card-content text-start">
-                        <h3 class="text-white mb-1 text-uppercase">SLAYER</h3>
-                        <p class="small text-white opacity-75">The relentless velocity and aggression of Dave Lombardo.</p>
+                        <h3 class="text-white mb-1">SLAYER</h3>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="face-card rounded" style="background-image: url('Images/Bands/DreamTheater.png');">
+            <div class="col-md-4 col-lg-3">
+                <div class="face-card rounded" style="background-image: url('Images/Bands/DreamTheater.png'); height: 350px;">
                     <div class="face-card-content text-start">
-                        <h3 class="text-white mb-1 text-uppercase">DREAM THEATER</h3>
-                        <p class="small text-white opacity-75">A masterclass in technical skill and odd-time flow.</p>
+                        <h3 class="text-white mb-1">DREAM THEATER</h3>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="face-card rounded" style="background-image: url('Images/Bands/BlackSabbath.png');">
+            <div class="col-md-4 col-lg-3">
+                <div class="face-card rounded" style="background-image: url('Images/Bands/Rush.png'); height: 350px;">
                     <div class="face-card-content text-start">
-                        <h3 class="text-white mb-1 text-uppercase">BLACK SABBATH</h3>
-                        <p class="small text-white opacity-75">The dynamic jazz-inspired darkness of Bill Ward.</p>
+                        <h3 class="text-white mb-1">RUSH</h3>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="face-card rounded" style="background-image: url('Images/Bands/Qotsa.png');">
+            <div class="col-md-4 col-lg-3">
+                <div class="face-card rounded" style="background-image: url('Images/Bands/Qotsa.png'); height: 350px;">
                     <div class="face-card-content text-start">
-                        <h3 class="text-white mb-1 text-uppercase">QOTSA</h3>
-                        <p class="small text-white opacity-75">The powerful drive of modern desert rock.</p>
+                        <h3 class="text-white mb-1">QUEENS OF THE STONE AGE</h3>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
+
 </asp:Content>

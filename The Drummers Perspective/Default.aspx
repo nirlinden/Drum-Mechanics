@@ -6,15 +6,16 @@
         <h1 class="metal-title text-uppercase">DRUM<br>MECHANICS</h1>
         
         <div class="mt-3 mb-4">
-            <span class="metal-subtitle">The Science of Heavy Metal</span>
+            <span class="metal-subtitle">Explaining Progressive Metal</span>
         </div>
     </div>
 
     <div class="container pb-5 text-center cards-container">
+        
         <div class="row mb-4">
             <div class="col-12">
                 <hr class="border-secondary mb-4" />
-                <h3 class="text-muted text-uppercase small letter-spacing-2">Select a Drumming Style</h3>
+                <h3 class="small mt-2 text-white-50" style="letter-spacing: 2px;">Select a Drumming Style</h3>
             </div>
         </div>
 
@@ -23,10 +24,7 @@
             <div class="col-md-4">
                 <div class="face-card rounded" style="background-image: url('Images/card-peart.jpg');">
                     <div class="face-card-content text-start">
-                        <h3 class="text-white mb-1">PRECISION</h3>  
-                        <p class="small text-white opacity-75">
-                            How mathematical composition creates perfect rhythm.
-                        </p>
+                        <h3 class="text-white mb-1">PRECISION</h3> 
                     </div>
                 </div>
             </div>
@@ -35,9 +33,6 @@
                 <div class="face-card rounded" style="background-image: url('Images/card-lombardo.jpg');">
                     <div class="face-card-content text-start">
                         <h3 class="text-white mb-1">SPEED</h3>
-                        <p class="small text-white opacity-75">
-                            The physical endurance required for thrash metal.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -46,14 +41,15 @@
                 <div class="face-card rounded" style="background-image: url('Images/card-portnoy.jpg');">
                     <div class="face-card-content text-start">
                         <h3 class="text-white mb-1">COMPLEXITY</h3>
-
-                        <p class="small text-white opacity-75">
-                            Odd-time signatures and progressive flow.
-                        </p>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
+
+    <div class="text-center mt-5 mb-5">
+        <a href="About.aspx" class="btn btn-red btn-lg px-5">ABOUT</a>
+    </div>
+
 </asp:Content>
