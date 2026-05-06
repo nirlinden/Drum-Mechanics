@@ -33,11 +33,6 @@
                 <p class="small mt-2 text-white-50">Creating a human "feel" while staying locked to a rigid grid.</p>
             </div>
         </div>
-
-    </div>
-
-    <div class="text-center mt-5">
-        <a href="Default.aspx" class="btn btn-red">RETURN HOME</a>
     </div>
 </div>
 

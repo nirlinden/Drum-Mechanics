@@ -56,22 +56,6 @@ h1, h2, h3, h4, .navbar-brand, .btn {
     text-transform: uppercase;
 }
 
-.btn-red {
-    background-color: #8a0000;
-    border: 2px solid #ff3333;
-    color: #ffffff;
-    padding: 15px 40px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transition: all 0.3s ease;
-}
-
-    .btn-red:hover {
-        background-color: #ff3333;
-        transform: scale(1.05);
-        color: #fff;
-    }
-
 .face-card {
     height: 350px;
     background-size: cover;

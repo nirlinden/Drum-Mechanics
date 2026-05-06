@@ -48,8 +48,4 @@
         </div>
     </div>
 
-    <div class="text-center mt-5 mb-5">
-        <a href="About.aspx" class="btn btn-red btn-lg px-5">ABOUT</a>
-    </div>
-
 </asp:Content>

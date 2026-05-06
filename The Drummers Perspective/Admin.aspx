@@ -27,16 +27,10 @@
                 <asp:CheckBoxField DataField="IsAdmin" HeaderText="Admin?" SortExpression="IsAdmin" />
             </Columns>
         </asp:GridView>
-
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-            ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DrumData;Integrated Security=True;" 
-            SelectCommand="SELECT [Id], [Username], [Email], [PreferredStyle], [ExpLevel], [IsAdmin] FROM [Users] WHERE ([Username] LIKE '%' + @SearchTerm + '%')"
-            DeleteCommand="DELETE FROM [Users] WHERE [Id] = @Id" 
-            UpdateCommand="UPDATE [Users] SET [Username] = @Username, [Email] = @Email, [PreferredStyle] = @PreferredStyle, [ExpLevel] = @ExpLevel, [IsAdmin] = @IsAdmin WHERE [Id] = @Id">
-            <SelectParameters>
-                <asp:ControlParameter ControlID="txtSearch" Name="SearchTerm" PropertyName="Text" Type="String" DefaultValue="%" />
-            </SelectParameters>
-        </asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+        ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DrumData.mdf;Integrated Security=True;" 
+        SelectCommand="SELECT * FROM [Users]">
+    </asp:SqlDataSource>
     </div>
 
 </asp:Content>
