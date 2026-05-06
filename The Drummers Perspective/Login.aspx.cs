@@ -18,7 +18,7 @@ namespace The_Drummers_Perspective
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             // 1. Where is the database?
-            string connString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DrumData;Integrated Security=True;";
+            string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DrumData.mdf;Integrated Security=True;";
 
             // 2. Open the connection
             using (SqlConnection conn = new SqlConnection(connString))

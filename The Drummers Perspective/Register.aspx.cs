@@ -20,7 +20,7 @@ namespace The_Drummers_Perspective
             if (rbBeginner.Checked) expLevel = "Beginner";
             else if (rbAdvanced.Checked) expLevel = "Advanced";
 
-            string connString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DrumData;Integrated Security=True;";
+            string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DrumData.mdf;Integrated Security=True;";
 
             using (SqlConnection conn = new SqlConnection(connString))
             {
@@ -50,7 +50,7 @@ namespace The_Drummers_Perspective
                     }
                     catch (Exception ex)
                     {
-                        lblServerMessage.Text = "An error occurred during registration. Make sure your username and email are unique.";
+                        lblServerMessage.Text = "SYSTEM ERROR: " + ex.Message;
                         lblServerMessage.CssClass = "d-block text-center text-danger small fw-bold mb-3";
                     }
                 }
