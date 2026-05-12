@@ -10,14 +10,29 @@
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3, h4, .navbar-brand, .btn {
+.btn {
+    background-color: #ff3333;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Oswald', sans-serif;
+}
+    .btn:hover {
+        background-color: #e60000;
+    }
+
+h1, h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(0, 0, 0, 0.9);
     border-bottom: 2px solid #8a0000;
 }
 
@@ -26,17 +41,18 @@ h1, h2, h3, h4, .navbar-brand, .btn {
 }
 
 .nav-link {
-    color: #bbbbbb !important;
+    color: #bbbbbb;
     font-weight: bold;
     transition: color 0.3s;
     margin-right: 10px;
 }
 
     .nav-link:hover {
-        color: #ff3333 !important;
+        color: #ff3333;
     }
 
-.metal-title {
+.main-title {
+    font-family: 'Oswald', sans-serif;
     font-size: 5rem;
     font-weight: 700;
     line-height: 1;
@@ -45,7 +61,7 @@ h1, h2, h3, h4, .navbar-brand, .btn {
     margin-bottom: 20px;
 }
 
-.metal-subtitle {
+.main-subtitle {
     font-size: 1.2rem;
     color: #ffffff;
     border-top: 1px solid #666;
@@ -56,7 +72,7 @@ h1, h2, h3, h4, .navbar-brand, .btn {
     text-transform: uppercase;
 }
 
-.face-card {
+.card {
     height: 350px;
     background-size: cover;
     background-position: center;
@@ -67,13 +83,12 @@ h1, h2, h3, h4, .navbar-brand, .btn {
     transition: all 0.4s ease;
 }
 
-    .face-card:hover {
-        transform: translateY(-10px);
+    .card:hover {
         border-color: #ff3333;
         cursor: pointer;
     }
 
-.face-card-content {
+.card-content {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -82,10 +97,19 @@ h1, h2, h3, h4, .navbar-brand, .btn {
     background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
 }
 
+.sheet-card {
+    height: auto;
+    overflow: visible;
+}
+
 .auth-card {
     background-color: rgba(10, 10, 10, 0.9);
     border: 1px solid #8a0000;
     padding: 30px;
+    color: #ffffff;
+    text-align: left;
+    height: auto;
+    overflow: visible;
 }
 
 .form-label {
@@ -96,7 +120,7 @@ h1, h2, h3, h4, .navbar-brand, .btn {
     letter-spacing: 1px;
 }
 
-.tech-card {
+.about-card {
     background-color: #111111;
     border: 1px solid #333;
     padding: 30px;
@@ -104,7 +128,7 @@ h1, h2, h3, h4, .navbar-brand, .btn {
     transition: all 0.3s ease;
 }
 
-    .tech-card:hover {
+    .about-card:hover {
         transform: translateY(-5px);
         border-color: #ff3333;
     }

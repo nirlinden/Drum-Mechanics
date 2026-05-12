@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="container text-center pt-5">
-        <h1 class="metal-title" style="font-size: 3.5rem;">LOGIN</h1>
+        <h1 class="main-title" style="font-size: 3.5rem;">LOGIN</h1>
 
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4">
@@ -24,7 +24,7 @@
                     <asp:Button ID="btnLogin" runat="server" Text="LOGIN" CssClass="btn btn-red w-100 py-2 fw-bold" OnClick="btnLogin_Click" />
                     
                     <div class="text-center mt-3">
-                        <a href="Register.aspx" class="text-muted small text-decoration-none">No account? Register here.</a>
+                        <a href="Register.aspx" class="text-white opacity-75">No account? Register here.</a>
                     </div>
 
                 </div>

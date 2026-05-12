@@ -30,16 +30,18 @@
                         <a class="nav-link" href="Default.aspx">Home</a>
                         <a class="nav-link" href="About.aspx">About</a>
                         <a class="nav-link" href="Gallery.aspx">Gallery</a>
+                        
                             <ul class="navbar-nav d-flex w-100">
     
                                 <% if (Session["Username"] != null) { %>
                                     <li class="nav-item d-flex align-items-center">
                                         <a class="nav-link fw-bold" href="SheetMusic.aspx">Sheet Music</a>
+                                        <a class="nav-link fw-bold" href="Profile.aspx">Profile</a>
                                     </li>
 
                                     <% if (Convert.ToBoolean(Session["IsAdmin"]) == true) { %>
                                         <li class="nav-item d-flex align-items-center">
-                                            <a class="nav-link fw-bold text-danger" href="Admin.aspx">Admin Dashboard</a>
+                                            <a class="nav-link fw-bold" href="Admin.aspx">Admin Dashboard</a>
                                         </li>
                                     <% } %>
                                 <% } %>

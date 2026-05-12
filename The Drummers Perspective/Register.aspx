@@ -2,23 +2,21 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="container text-center pt-5">
-        <h1 class="metal-title" style="font-size: 3.5rem;">REGISTER</h1>
-
+    <div class="container text-center">
+        <h1 class="main-title">REGISTER</h1>
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-5">
-                <div class="card auth-card p-4 text-white text-start">
-                    
+                <div class="card auth-card">                   
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="form-label text-uppercase small text-danger fw-bold">Username</label>
                             <asp:TextBox ID="txtUsername" ClientIDMode="Static" runat="server" CssClass="form-control bg-dark text-white border-secondary"></asp:TextBox>
-                            <small class="text-muted" style="font-size: 0.7rem;">Min 4 chars, letters/numbers only.</small>
+                            <small class="text-white opacity-75" style="font-size: 0.7rem;">Min 4 chars, letters/numbers only.</small>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label class="form-label text-uppercase small text-danger fw-bold">Phone</label>
                             <asp:TextBox ID="txtPhone" ClientIDMode="Static" runat="server" CssClass="form-control bg-dark text-white border-secondary"></asp:TextBox>
-                            <small class="text-muted" style="font-size: 0.7rem;">10 digits, starts with 0.</small>
+                            <small class="text-white opacity-75" style="font-size: 0.7rem;">10 digits, starts with 0.</small>
                         </div>
                     </div>
 
@@ -66,10 +64,10 @@
 
                     <asp:Label ID="lblServerMessage" runat="server" CssClass="d-none small fw-bold mb-3"></asp:Label>
 
-                    <asp:Button ID="btnRegister" runat="server" Text="REGISTER" CssClass="btn btn-red w-100 py-2 fw-bold" OnClick="btnRegister_Click" OnClientClick="return validateRegistration();" />
+                    <asp:Button ID="btnRegister" runat="server" Text="REGISTER" CssClass="btn" OnClick="btnRegister_Click" OnClientClick="return validateRegistration();" />
                     
                     <div class="text-center mt-3">
-                        <a href="Login.aspx" class="text-muted small text-decoration-none">Already have an account? Log In</a>
+                        <a href="Login.aspx" class="text-white opacity-75">Already have an account? Log In</a>
                     </div>
                 </div>
 
@@ -79,48 +77,51 @@
 
 <script type="text/javascript">
     function validateRegistration() {
-        // Because you used ClientIDMode="Static", we can just use your exact IDs! No server tags needed.
-        var username = document.getElementById('txtUsername').value;
-        var phone = document.getElementById('txtPhone').value;
-        var email = document.getElementById('txtRegEmail').value;
-        var pass = document.getElementById('txtRegPass').value;
-        var confirmPass = document.getElementById('txtConfirmPass').value;
-        var terms = document.getElementById('chkTerms').checked;
+        let username = document.getElementById('txtUsername').value;
+        let phone = document.getElementById('txtPhone').value;
+        let email = document.getElementById('txtRegEmail').value;
+        let pass = document.getElementById('txtRegPass').value;
+        let confirmPass = document.getElementById('txtConfirmPass').value;
+        let terms = document.getElementById('chkTerms').checked;
 
-        // 1. Check for empty fields
+        // empty fields
         if (username.trim() === "" || email.trim() === "" || pass.trim() === "") {
-            alert("Hold up! Username, Email, and Password are required to register.");
-            return false; // Stops the form from submitting
-        }
-
-        // 2. Check if passwords match
-        if (pass !== confirmPass) {
-            alert("Your passwords do not match. Try again!");
+            alert("Username, Email, and Password are required to register.");
             return false;
         }
 
-        // 3. Check for basic email structure
+        // passwords match
+        if (pass !== confirmPass) {
+            alert("Your passwords do not match");
+            return false;
+        }
+
+        // email structure
         if (email.indexOf('@') === -1) {
             alert("Please enter a valid email address.");
             return false;
         }
 
-        // 4. Check Phone Number (10 digits, starts with 0)
-        if (phone.trim() !== "") {
-            var phoneRegex = /^0\d{9}$/; // Regular expression: Starts with 0, followed by exactly 9 numbers
-            if (!phoneRegex.test(phone.trim())) {
+        // phone number
+        const trimmedPhone = phone.trim();
+
+        if (trimmedPhone !== "") {
+            const isTenDigits = trimmedPhone.length === 10;
+            const startsWithZero = trimmedPhone.startsWith('0');
+            const isAllNumbers = !isNaN(trimmedPhone) && !trimmedPhone.includes(' ');
+
+            if (!isTenDigits || !startsWithZero || !isAllNumbers) {
                 alert("Phone number must be exactly 10 digits and start with a 0.");
                 return false;
             }
         }
 
-        // 5. Check if Terms are agreed to
+        // 5. terms
         if (terms === false) {
             alert("You must agree to the drumming rules and regulations.");
             return false;
         }
 
-        // If all checks pass, allow the server to do its job!
         return true;
     }
 </script>

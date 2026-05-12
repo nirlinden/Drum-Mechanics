@@ -24,13 +24,11 @@ namespace The_Drummers_Perspective
 
             using (SqlConnection conn = new SqlConnection(connString))
             {
-                // Removed FirstName and LastName from the SQL query
                 string query = @"INSERT INTO Users (Username, Email, Password, Phone, PreferredStyle, ExpLevel, IsAdmin) 
-                                 VALUES (@Username, @Email, @Password, @Phone, @PreferredStyle, @ExpLevel, 1)";
+                                 VALUES (@Username, @Email, @Password, @Phone, @PreferredStyle, @ExpLevel, 0 )";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    // Removed the txtFirstName and txtLastName parameters
                     cmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim());
                     cmd.Parameters.AddWithValue("@Email", txtRegEmail.Text.Trim());
                     cmd.Parameters.AddWithValue("@Password", txtRegPass.Text.Trim());
@@ -44,7 +42,7 @@ namespace The_Drummers_Perspective
                         cmd.ExecuteNonQuery();
 
                         Session["Username"] = txtUsername.Text.Trim();
-                        Session["IsAdmin"] = true;
+                        Session["IsAdmin"] = false;
 
                         Response.Redirect("SheetMusic.aspx", false);
                     }
